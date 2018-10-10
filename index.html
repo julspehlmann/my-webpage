@@ -1,0 +1,106 @@
+<!--
+Julia Spehlmann, UMass Lowell Computer Science, julia_spehlmann@student.uml.edu
+COMP 4610 GUI Programming I
+Assignment 4: Styling Your First Webpage with CSS
+Copyright (c) 2018 by Julia Spehlmann. All rights reserved.
+Updated by JS on October 8, 2018 at 4:30 PM
+File: index.html
+Description: The purpose of this webpage is to introduce myself and is used as an index for future assignments.
+-->
+
+<!-- declaration of the HTML version the document is written in -->
+<!DOCTYPE html>
+
+<!-- marks the start and primary language (english) of the document -->
+<html lang="en">
+  <head>
+
+    <!-- specify character encoding as utf-8 -->
+    <meta charset="utf-8">
+
+    <!-- gives the page a title -->
+    <title>My First Webpage</title>
+
+    <!-- links CSS file to control appearnce of page -->
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Unica%20One' rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Archivo%20Narrow' rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Secular%20One' rel="stylesheet">
+
+
+    <!-- links a JS file to control interactions on the page -->
+    <script src="script.js"></script>
+  </head>
+
+  <!-- all content in the body will be displayed in main browser window -->
+  <body>
+
+    <div class="wrapper">
+      <header> Julia Spehlmann </header>
+
+      <!-- the nav section will link to other sections on this page !-->
+      <!-- giving this section an id as it will only be used once -->
+      <nav id="nav-bar">
+        <a href="index.html">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#uml">UML</a>
+        <a href="#gui">GUI</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+
+      <!-- adding an image contained within this folder and using style to center the image -->
+      <img src="IMG_0405.JPG" alt="Photo of Me">
+
+      <!-- grid layout for the remainder of the page -->
+      <div class="grid-container">
+        <div class="grid-item">
+          <!-- headers are given IDs so nav can jump to this section of the page -->
+          <h1> <a id="about">ABOUT </a></h1>
+          <p>Hey friends, welcome to my website! In case you missed my giant name in the heading of this page, my name is Julia Spehlmann.
+            I am a senior at UMass Lowell, majoring in Computer Science. When I'm not studying, you can catch me at the beach playing volleyball,
+            hanging out with my two dogs (Red and Blue), sewing bracelets, or shopping at <a href="https://www.traderjoes.com/">Trader Joes.</a> I love
+            to travel, animals, and cooking.</p>
+          <h1> <a id="uml">UML </a></h1>
+          <p> I'm currently pursuing my second Bacelor's Degree at UMass Lowell. I've taken COMP I - IV, Logic Design, Assembly Programming
+            Language, Analysis of Algorithms and several math classes. Last semester I spent 6 months as a Software Engineering co-op at
+            <a href="https://www.curriculumassociates.com/">Curriculum Associates.</a>This semester I'm back at school taking GUI, Mobile Robotics,
+            Foundations of Computer Science, Computer Architecture, and Symbolic Logic.
+          </p>
+          <p class="bold-text">Wish me luck, am I right?!</p>
+          <a class="btn" href="index.html">Back to Top</a>
+        </div>
+        <div class="grid-item">
+            <img src="boys.jpg" alt="my dogs">
+        </div>
+        <div class="grid-item">
+          <img src="beach.jpg" alt="turks and caicos beach">
+        </div>
+        <div class="grid-item">
+          <h1> <a id="gui">GUI </a></h1>
+          <p>I hope to be a front-end engineer in the near future. GUI is my first step in learning all there is to know about web development.
+            GUI (Graphical User Interface) is a web development course offered here at UML. It's also the first of a 2-part project sequence.
+            So far, we've learned HTML and CSS. I'm super excited to start adding some JavaScript to this page! Interested in my GUI assignments?
+            Thought so! Check them out here:
+            <ul>
+              <!-- links to incompleted assignments are dead links -->
+              <li><a href="index.html">Assignment 2</a></li>
+              <li><a href="a3.html">Assignment 3</a></li>
+              <li><a href="index.html">Assignment 4</a></li>
+              <li><a href="">Assignment 5</a></li>
+              <li><a href="">Assignment 6</a></li>
+            </ul>
+            <h1> <a id="contact">CONTACT </a></h1>
+            I'd love to hear from you... send me an email:
+                <p class="bold-text">julia_spehlmann@student.uml.edu</p>
+            </p>
+            <a class="btn" href="index.html">Back to Top</a>
+       </div>
+      </div>
+
+    </div>
+    <div id="footer">
+      <img class="icon" src="./imgs/valid-css.png"></img>
+      <img class="icon" src="./imgs/valid-html.png"></img>
+  </div>
+  </body>
+</html>
