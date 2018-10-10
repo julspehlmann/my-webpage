@@ -1,0 +1,132 @@
+/*
+ File: style.css
+ COMP 4610 Assignment: Styling Your First Web Page With CSS
+ Julia Spehlmann, UMass Lowell Computer Science, julia_spehlmann@student.uml.edu
+ Copyright (c) 2018 by Julia Spehlmann. All rights reserved.
+ Updated by JS on October 9, 2018 at 10:46 AM
+
+ This file styles my first webpage, index.html.
+*/
+
+
+
+/* wrapper centers the page
+and allows page to resize */
+.wrapper {
+  margin: auto;
+  max-width: 960px;
+  min-width: 500px;
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* fonts imported from google fonts */
+header {
+  font-size: 450%;
+  font-family:'Unica One';
+  letter-spacing: 15px;
+  color: #1f3d7a;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#nav-bar {
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+#nav-bar a{
+    text-decoration: none;
+    color:  #999999;
+    font-family:'Archivo Narrow';
+    padding: 25px;
+}
+
+#nav-bar a:hover {
+  color:  #99003d;
+}
+
+/*styles the main image of the page*/
+img {
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+/* set up a grid by setting grid-container class display to grid
+grid-template creates a grid with 2 columns
+grid gap sets spacing between grid items */
+.grid-container {
+  display: grid;
+  grid-gap: 50px 100px;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+}
+
+.grid-item {
+  text-align: center;
+  font-family:'Archivo Narrow';
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.grid-item h1 {
+  font-size: 29px;
+  font-family: 'Secular One';
+  letter-spacing: 4.5px;
+  margin: 0;
+  color: #2d7086;
+}
+
+p {
+  margin: 0;
+  color: #999999;
+  padding-bottom: 20px;
+}
+
+.grid-item img {
+  max-width: 100%;
+}
+
+.bold-text {
+  font-weight: bold;
+  font-size: 100%;
+}
+ ul{
+   list-style-type: none;
+   display: inline;
+ }
+ li a, p a {
+   text-decoration: none;
+   color: #2d7086;
+ }
+
+ li a:hover, p a:hover {
+   color: #99003d;
+ }
+
+ .btn {
+     text-align: center;
+     display: inline-block;
+     margin: 4px 2px;
+     cursor: pointer;
+     opacity: .5;
+     padding: 5px;
+     border: 1px solid black;
+     color: black;
+     text-decoration: none;
+     font-size: small
+ }
+
+ .btn:hover {
+   color: #99003d;
+ }
+
+ #footer {
+   width:50px;
+   height: 75px;
+ }
+
+ .icon {
+   width:100%;
+   padding: 0;
+ }
