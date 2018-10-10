@@ -1,0 +1,120 @@
+/*
+ File: pacific.css
+ COMP 4610 Assignment: Style a Site with External CSS
+ Julia Spehlmann, UMass Lowell Computer Science, julia_spehlmann@student.uml.edu
+ Copyright (c) 2018 by Julia Spehlmann. All rights reserved.
+ Updated by JS on September 28, 2018 at 10:36 AM
+
+ This file styles a3.html.
+*/
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+/*sets header image and background color*/
+header {
+	background-image: url(sunset.jpg);
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-color: #110c2d;
+	color: white;
+}
+/*wrapper contains all content
+has a min-width, but will adjust according to screen size*/
+#wrapper {
+	min-width: 600px;
+	width: 80%;
+	margin: 0 auto;
+	background-color: white;
+	position: relative;
+	overflow: hidden;
+	margin-top: 22px;
+	margin-bottom: 50px;
+}
+#content {
+	margin-left: 220px;
+}
+/*sets bullet points to image*/
+#content ul {
+ 	list-style-image: url('marker.gif');
+ 	list-style-position: inside;
+}
+/*body has a linear gradient background
+and is solid at the bottom*/
+body {
+	background-image: linear-gradient(white, #00569f);
+	background-repeat: no-repeat;
+	background-color: #00569f;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100%
+}
+/*removes underlines in links*/
+a {
+	text-decoration: none;
+	color: #062460;
+	font-weight: bold;
+}
+/*sets the nav bar to left of wrapper
+height will mirror wrapper height*/
+nav {
+	background-color: #90C7E3;
+	width: 190px;
+	font-family: Arial;
+	float: left;
+	height: 100%;
+	position: absolute;
+}
+nav ul {
+	font-size: 1.2em;
+	list-style-type: none;
+	margin-left: -15px;
+}
+nav a:visited {
+	color: #344873;
+}
+nav a:hover {
+	color: #FFFFFF;
+}
+h1 {
+	margin: 0;
+	padding: 10px;
+}
+h2 {
+	color: #3399CC;
+}
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+p,
+ul {
+	font-size: 14px;
+}
+#contact {
+	background-color: white;
+	font-size: 12px;
+	margin-top: 30px;
+}
+dt {
+	color: #000033;
+}
+/*creates whitespace around footer*/
+footer {
+	background-color: white;
+	font-family: Georgia, "Times New Roman", serif;
+	margin-left: 220px;
+	margin-top: 30px;
+	padding-bottom: 15px;
+	font-size: 10px;
+	font-style: italic;
+}
+img {
+	float: left;
+	margin-right: 15px;
+}
+/*changes color of specific (class resort) span text*/
+.resort {
+	color: #465d82;
+	font-weight: bold;
+}
